@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;1,400;1,700&family=Poppins:wght@400;600&display=swap');
+// 'Poppins', sans-serif;
+$img: "./icon-cart.svg";
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    .mainContainer{
+        width: 34vw;
+        height: 50vh;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .leftBox{
+            width: 50%;
+            height: 100%;
+            .img{
+                background-image: url("./image-product-desktop.jpg");
+                height: 100%;
+                width: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: visible;
+            }
+        }
+        .rightBox{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 3rem;
+            font-family: 'Poppins', sans-serif;
+            .rightContainer{
+                height: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 80%;
+                .italic{
+                    color: hsl(228, 12%, 48%);
+                    font-size: 0.7rem;
+                    letter-spacing: 0.4rem;
+                }
+                .titleBold{
+                    font-family: 'Fraunces', serif;
+                    font-weight: 900;
+                    font-style: italic;
+                    font-size: 2rem;
+                }
+                button{
+                    width: 80%;
+                    height: 4rem;
+                }
+                .text{
+                    color: hsl(228, 12%, 48%);
+                    font-size: .75rem;
+                    word-spacing: 0.2rem;
+                }
+                .price{
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 800;
+                    color:  hsl(158, 69%, 26%);
+                    font-size: 1.4rem;
+                    .bigPrice{
+                        color: hsl(228, 12%, 48%);
+                        font-size: 0.6rem;
+                        text-decoration-line: line-through;
+                    }
+                }
+                .button{
+                    width: 100%;
+                    background-color: hsl(158, 69%, 26%);
+                    border: none;
+                    height: 3rem;
+                    border-radius: 1rem;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        margin-right: 1rem;
+                    }
+                }
+                .button:hover{
+                    background-color: hsl(158, 82%, 15%);
+                }
+            }
+            
+        }
+    }
+}
+
+@media all and (max-width: 1735px) {
+        .App{     
+    .mainContainer{ 
+        width: 38vw;
+        .leftBox{
+            .img{
+                background-image: url("./image-product-desktop.jpg");
+                height: 100%;
+                width: auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    .rightBox{
+        .rightContainer{
+                .italic{
+                    font-size: 0.5rem;
+                }
+                .titleBold{
+                    font-size: 1.8rem;
+                }
+                button{
+                    height: 2.5rem;
+                }
+                .text{
+                    font-size: .7rem;
+                }
+                .price{
+                    font-size: 1.2rem;
+                    .bigPrice{
+                        font-size: 0.6rem;
+                    }
+                } 
+                .button{
+                    height: 1.8rem;
+                }
+            } 
+    }            
+    }
+}
+  }
+
+  @media all and (max-width: 1550px) {
+    .App{     
+.mainContainer{ 
+    height: 40vh;
+    width: 42vw;
+    .rightBox{
+        .rightContainer{
+                .italic{
+                    font-size: 0.5rem;
+                }
+                .titleBold{
+                    font-size: 1.8rem;
+                }
+                button{
+                    height: 2.5rem;
+                }
+                .text{
+                    font-size: .7rem;
+                }
+                .price{
+                    font-size: 1.2rem;
+                    .bigPrice{
+                        font-size: 0.6rem;
+                    }
+                } 
+                .button{
+                    height: 1.8rem;
+                }
+            } 
+    }        
+}
+}
+}
+@media all and (max-width: 1260px) {
+    .App{     
+.mainContainer{ 
+    height: 42vh;
+    width: 48vw;
+    .rightBox{
+        .rightContainer{
+                .italic{
+                    font-size: 0.5rem;
+                }
+                .titleBold{
+                    font-size: 1.8rem;
+                }
+                button{
+                    height: 2.5rem;
+                }
+                .text{
+                    font-size: .7rem;
+                }
+                .price{
+                    font-size: 1.2rem;
+                    .bigPrice{
+                        font-size: 0.6rem;
+                    }
+                } 
+                .button{
+                    height: 1.8rem;
+                }
+            } 
+    }        
+}
+}
+}
+
+@media all and (max-width: 995px) {
+    .App{     
+.mainContainer{ 
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    .leftBox{
+        width: 100%;
+            height: 100%;
+        .img{
+            background-image: url("./image-product-mobile.jpg");
+        }
+    }
+.rightBox{
+    width: 100%;
+    .rightContainer{
+        margin-left: 3vh;
+        width: 90%;
+            .italic{
+                font-size: .8rem;
+            }
+            .titleBold{
+                font-size: 2.8rem;
+            }
+            button{
+                height: 3.5rem;
+            }
+            .text{
+                font-size: 1rem;
+            }
+            .price{
+                width: 20%;
+                font-size: 1.5rem;
+                .bigPrice{
+                    font-size: .8rem;
+                }
+            } 
+            .button{
+                height: 2.5rem;
+            }
+        } 
+}            
+}
+}
+}
+@media all and (max-width: 650px) {
+    .App{     
+.mainContainer{ 
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    .leftBox{
+        
+            height: 70%;
+            width: 100vw;
+        .img{
+            background-image: url("./image-product-mobile.jpg");
+        }
+    }
+.rightBox{
+    width: 80%;
+    .rightContainer{
+        margin-left: 1vh;
+            .italic{
+                font-size: .7rem;
+            }
+            .titleBold{
+                font-size: 2.7rem;
+            }
+            button{
+                width: 100%;
+                height: 3.4rem;
+            }
+            .text{
+                font-size: .9rem;
+            }
+            .price{
+                width: 35%;
+                font-size: 1.4rem;
+                .bigPrice{
+                    font-size: .7rem;
+                }
+            } 
+            .button{
+                width: 100%;
+                height: 2.4rem;
+            }
+        } 
+}            
+}
+}
+}
+
+@media all and (max-width: 550px) {
+    .App{     
+.mainContainer{ 
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    .leftBox{
+        
+            height: 60%;
+            width: 100vw;
+        .img{
+            background-image: url("./image-product-mobile.jpg");
+        }
+    }
+.rightBox{
+    width: 85%;
+    .rightContainer{
+        margin-left: 0vh;
+            .italic{
+                font-size: .7rem;
+            }
+            .titleBold{
+                font-size: 2.4rem;
+            }
+            button{
+                width: 100%;
+                height: 3.4rem;
+            }
+            .text{
+                font-size: .9rem;
+            }
+            .price{
+                width: 40%;
+                font-size: 1.4rem;
+                .bigPrice{
+                    font-size: .7rem;
+                }
+            } 
+            .button{
+                width: 100%;
+                height: 2.4rem;
+            }
+        } 
+}            
+}
+}
+}
