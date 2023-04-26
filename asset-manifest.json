@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/github.io/Product_Card/static/css/main.e3c3baca.css",
+    "main.js": "/github.io/Product_Card/static/js/main.33ccc3c6.js",
+    "static/js/787.c0cc0218.chunk.js": "/github.io/Product_Card/static/js/787.c0cc0218.chunk.js",
+    "static/media/image-product-desktop.jpg": "/github.io/Product_Card/static/media/image-product-desktop.c96d43af17111fe78e96.jpg",
+    "static/media/image-product-mobile.jpg": "/github.io/Product_Card/static/media/image-product-mobile.113818bc746dc8e64ffb.jpg",
+    "index.html": "/github.io/Product_Card/index.html",
+    "static/media/icon-cart.svg": "/github.io/Product_Card/static/media/icon-cart.9606ad84b7565a3f523f9429396f8066.svg",
+    "main.e3c3baca.css.map": "/github.io/Product_Card/static/css/main.e3c3baca.css.map",
+    "main.33ccc3c6.js.map": "/github.io/Product_Card/static/js/main.33ccc3c6.js.map",
+    "787.c0cc0218.chunk.js.map": "/github.io/Product_Card/static/js/787.c0cc0218.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3c3baca.css",
+    "static/js/main.33ccc3c6.js"
+  ]
+}
